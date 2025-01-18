@@ -1,0 +1,11 @@
+{
+    ".pdf": "PDFs",
+    ".jpg": "Images",
+    ".jpeg": "Images",
+    ".png": "Images",
+    ".txt": "Text Files",
+    ".docx": "Word Documents",
+    ".mp4": "Videos",
+    ".xlsx": "excel"
+    
+}
