@@ -10,7 +10,7 @@ from tkinter import filedialog, messagebox, Listbox, Scrollbar, RIGHT, Y, Toplev
 class FileOrganizerApp:
     def __init__(self, root):
         self.root = root
-        self.root.title("Futuristic File Organizer Tool")
+        self.root.title("File Organizer")
 
         # Set the theme
         self.style = ttk.Style("darkly")
