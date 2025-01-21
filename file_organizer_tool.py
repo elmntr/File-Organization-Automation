@@ -12,6 +12,7 @@ class FileOrganizerApp:
         self.root = root
         self.root.title("File Organizer")
 
+        self.center_window()
         # Set the theme
         self.style = ttk.Style("darkly")
 
@@ -80,7 +81,20 @@ class FileOrganizerApp:
         self.delete_mapping_button.pack(side=LEFT, padx=5)
 
         self.selected_folder = None
+    
+    def center_window(self):
+        """Center the window on the screen."""
+        screen_width = self.root.winfo_screenwidth()
+        screen_height = self.root.winfo_screenheight()
+        window_width = 800  # You can change this
+        window_height = 550  # You can change this
 
+        position_top = int(screen_height / 2 - window_height / 2)
+        position_right = int(screen_width / 2 - window_width / 2)
+
+        self.root.geometry(f"{window_width}x{window_height}+{position_right}+{position_top}")
+        
+    
     def check_first_time_usage(self):
         """Check if the user is opening the app for the first time and show the manual."""
         if not os.path.exists(self.settings_file):
